@@ -164,7 +164,6 @@ const PremiumScreen: React.FC<PremiumScreenProps> = ({
             <img
               src={`${IMAGE_URL}${coupleData?.floral_button_background?.url}`}
               className=" w-2/4 md:w-2/6 h-full object-cover"
-              loading="lazy"
             ></img>
             <p className=" text-center text-base md:text-2xl text-amber-50 absolute top-1/2 -mt-4">
               បើកធៀប
