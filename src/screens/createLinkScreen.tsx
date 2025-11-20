@@ -40,7 +40,7 @@ const CreateLinkScreen: React.FC<CreateLinkScreenProps> = ({ URL }) => {
   return (
     <div
       style={{
-        backgroundImage: `url(${flowerFrame})`,
+        backgroundImage: `url(${flowerFrame.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
