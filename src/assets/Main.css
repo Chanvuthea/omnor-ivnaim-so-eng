@@ -1,0 +1,297 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ stops horizontal scroll */
+}
+
+.bg-Main {
+  position: fixed;
+  height: 100vh;
+  overflow-x: hidden; /* ✅ stops horizontal scroll */
+}
+
+.bg-Main::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.Mono1 {
+  text-align: center;
+  padding-top: 30%;
+  font-family: "Moul", serif;
+  color: #a37333;
+}
+.Mono1 h3 {
+  font-size: 30px;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+}
+h3,
+.h3 {
+  font-size: 25px;
+}
+
+/*
+ * Names and Titles
+ * ------------------
+ */
+.dad-names,
+.mom-names,
+.groom-bride-tittle,
+.groom-bride-names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.text-filter {
+  color: #a37333;
+}
+
+.dad-names,
+.dad-names * {
+  font-family: "Angkor", serif !important;
+  color: #a37333 !important;
+  font-size: 13px !important;
+  gap: 100px;
+  /* -webkit-text-stroke: 0.8px #a37333; */
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 88px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.mom-names,
+.mom-names * {
+  font-family: "Angkor", serif !important;
+  color: #a37333 !important;
+  font-size: 13px !important;
+  gap: 110px;
+  /* -webkit-text-stroke: 0.8px #a37333; */
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.invite {
+  text-align: center;
+  font-family: "Moul", serif;
+  color: #a37333;
+  font-size: 12px !important;
+  text-decoration: underline;
+}
+
+.sub-invite {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #a37333;
+  text-align: center;
+  font-size: 12px !important;
+  font-family: "Moulpali", sans-serif !important;
+  line-height: 20px;
+}
+
+.groom-bride-tittle {
+  gap: 120px;
+  font-family: "Moulpali", sans-serif !important;
+  font-size: 12px !important;
+  color: #a37333;
+}
+
+.groom-bride-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Moul", serif;
+  color: #a37333;
+  font-size: 20px !important;
+  /* -webkit-text-stroke: 0.3px #ffffff; */
+  /* text-shadow: 1px 1px 4px rgba(98, 98, 98, 0.474); */
+  gap: 10px;
+}
+
+/* top text */
+.middle-text {
+  font-family: "Moulpali", sans-serif !important;
+  font-size: 12px !important;
+  color: #a37333;
+  margin-bottom: 5px;
+}
+
+/* bottom names side by side */
+.name-pair {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.name-pair p {
+  margin: 0;
+}
+
+.dateinfo {
+  font-family: "Moul", sans-serif !important;
+  color: #a37333;
+  text-align: center;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.dateinfo1 {
+  font-family: "Moul", serif;
+  color: #a37333;
+  font-size: 20px !important;
+  text-align: center;
+}
+
+.dateinfo h5 {
+  font-size: 12px;
+}
+
+.dateinfo h6 {
+  font-size: 15px;
+}
+
+/*
+ * Calendar Button
+ */
+.calendar-button {
+  display: inline-block;
+  background-color: #a37333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Hanuman", serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.bt {
+  text-align: center;
+}
+
+.calendar-button:hover {
+  background-color: #8f7b54;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * Events Section
+ */
+.event {
+  font-family: "Angkor", serif;
+  color: #a37333;
+  /* text-shadow: 0 2px 6px #a37333; */
+
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.sub-event {
+  font-family: "Angkor", serif;
+  color: #ffffff;
+  /* text-shadow: 0 2px 6px #a37333; */
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.eventDetailTime {
+  text-align: center;
+  font-family: "Moul";
+  font-size: 15px;
+  color: #a37333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.eventDetail {
+  text-align: center;
+  font-family: "Moul";
+  font-size: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* text-shadow: 3px 3px 6px #a37333; */
+  color: #a37333;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/*
+ * Day Toggle
+ */
+.day-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 20px;
+}
+
+.day-btn {
+  font-family: "Moulpali", sans-serif;
+  font-size: 15px;
+  padding: 10px 25px;
+  border: 1px solid #a37333;
+  background: white;
+  color: #a37333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day-btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.day-btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.day-btn.active {
+  background: #a37333;
+  color: white;
+}
+
+.day-btn:not(.active):hover {
+  background: rgba(168, 142, 97, 0.1);
+  color: white;
+}
